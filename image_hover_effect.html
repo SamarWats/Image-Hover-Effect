@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Effect</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card{
+            width: 450px;
+            height: 300px;
+            background: rgb(208, 161, 161);
+            position: relative;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(0,0,0,0.123);
+        }
+
+        .card img{
+            position: absolute;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .content{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            height: 50px;
+            padding: 0.4em 1.5em;
+            font-size: 15px;
+            background:rgba(225, 225, 225,0);
+            backdrop-filter: blur(10px);
+            transform: scale(0.9);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.164);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.144);
+            overflow: hidden;
+            transition: all .7s;
+        }
+        .content p{
+            font-size: 0.8em;
+        }
+        .card:hover .content{
+            height: 160px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://www.topgear.com/sites/default/files/2023/03/TG%20LAMBO230309_0013.jpg" alt="car image">
+        <div class="content">
+            <h2>Car Description</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto omnis aspernatur enim aut voluptas voluptate ut veritatis minus suscipit sequi, eveniet harum exercitationem recusandae obcaecati magnam placeat qui atque blanditiis labore asperiores sint commodi. Voluptas nobis repellendus voluptatem accusantium cupiditate explicabo, velit porro beatae. Praesentium vitae debitis dignissimos eius velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur deserunt, ducimus quas ullam quia ut velit sapiente quibusdam possimus, commodi obcaecati, iure autem odio! A laudantium dolorum eos, minus ducimus quo odio! Tempore, doloremque similique? Repellendus reiciendis quod voluptate officia?</p>
+        </div>
+    </div>
+    
+</body>
+</html>
